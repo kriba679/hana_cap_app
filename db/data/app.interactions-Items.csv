@@ -1,0 +1,4 @@
+ID,interaction_ID,text,date,price,currency_code
+I1,H1,Item1_header1,2025-01-01,25,CAD
+I2,H1,Item2_header1,2025-01-01,30,CAD
+I3,H2,Item3_header2,2025-01-01,35,EUR
