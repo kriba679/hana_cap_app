@@ -51,6 +51,11 @@ modules:
           url: ~{srv-url}
           forwardAuthToken: true
       - name: hana_cap_app-auth
+    provides:
+      - name: app-api
+        properties:
+          app-protocol: ${protocol}
+          app-uri: ${default-uri}
 
 resources:
   - name: hana_cap_app-auth
