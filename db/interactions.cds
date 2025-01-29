@@ -18,6 +18,7 @@ entity Headers : cuid, managed {
     country : Country;
 };
 
+
 entity Items : cuid {
     interaction : Association to Headers;
     text        : localized Text;
