@@ -1,0 +1,3 @@
+@baseUrl = 'localhost:4004/'
+
+GET http://localhost:4004/odata/v4/catalog/Interactions_Header?

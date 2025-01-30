@@ -1,0 +1,43 @@
+{
+  "name": "hana_cap_app",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@sap/cds": "^8",
+    "@sap/cds-common-content": "^2.1.0",
+    "@sap/cds-hana": "^2.0.0",
+    "@sap/hana-client": "^2.23.24",
+    "@sap/hdi-deploy": "^5.3.2",
+    "@sap/xssec": "^4",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.8.0",
+    "@cap-js/sqlite": "^1.7.8",
+    "@sap/cds-dk": "^8.6.1"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "build": "cds build/all",
+    "deploy": "cds deploy"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "[prod]": {
+          "kind": "hana"
+        },
+        "[dev]": {
+          "kind": "sqlite"
+        }
+      }
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  }
+}
